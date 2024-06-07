@@ -7,6 +7,7 @@ function ProductList() {
   const [filteredProducts, setFilteredProducts] = useState([]);
 
   useEffect(() => {
+    document.title = 'E-shop Homepage';
     const APIURL = 'https://v2.api.noroff.dev/online-shop';
     const fetchData = async () => {
       try {

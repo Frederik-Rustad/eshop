@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function ContactPage() {
+  document.title = 'Contact | E-shop';
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
@@ -47,7 +48,6 @@ function ContactPage() {
     if (!valid) {
       return;
     }
-
     console.log('Form submitted:', { name, email, subject, message });
     setSubmitted(true);
   };
@@ -69,7 +69,7 @@ function ContactPage() {
           ) : (
             <form onSubmit={handleSubmit}>
               <div className="mb-3">
-                <label htmlFor="name" className="form-label">Name</label>
+                <label htmlFor="name" className="form-label">Full Name</label>
                 <input
                   type="text"
                   className="form-control"

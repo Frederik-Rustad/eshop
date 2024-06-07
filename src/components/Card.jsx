@@ -18,7 +18,7 @@ function Card(props) {
       <img src={props.image.url} className="card-img-top productimg order-md-2 mx-auto" alt={props.title} />
       <div className="card-body">
         <h5 className="card-title">{props.title}</h5>
-        <p className={`card-text ${priceClass}`}>Price: {props.price} {saleText}</p>
+        <p className={`card-text ${priceClass}`}>Price: {props.price}$ {saleText}</p>
         <button className="btn btn-dark" onClick={handleButtonClick}>View Product</button>
       </div>
     </div>

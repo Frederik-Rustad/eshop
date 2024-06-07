@@ -44,6 +44,7 @@ function ProductPage() {
   if (error) {
     return <div>Error: {error}</div>;
   }
+  document.title = `${product.title} | E-shop`;
 
   return (
     <div className="container">     

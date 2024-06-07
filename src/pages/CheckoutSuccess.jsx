@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function CheckoutSuccessPage() {
+  document.title = 'Checkout Success | E-shop';
   return (
     <div className="container">      
       <div className="row">

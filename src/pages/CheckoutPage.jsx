@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { CartContext } from '../context/CartContext';
 
 function CheckoutPage() {
+  document.title = 'Checkout | E-shop';
   const { cartItems, totalAmount, removeFromCart, clearCart } = useContext(CartContext);
   const navigate = useNavigate();
 
